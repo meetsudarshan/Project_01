@@ -12,32 +12,44 @@
 
 <body>
 
-        <!-- LOGO -->
-        <section class="headline">
-            
-            <h1>What Right Now</h1>
-            <p>Welcome to the best location navigator tool which allows you to get the current weather, latest news, the happening nightlife scene in the neighborhood and provides some great recommendations for family dining and takeout. </p></section>
-
+    <header>
+        <h1>What Right Now</h1>
+        <p>Welcome to the best location navigator tool which allows you to get the current weather, latest news, the happening nightlife scene in the neighborhood and provides some great recommendations for family dining and takeout. </p>
+    </header>
             <section class="wrapper">
             <section class="sidebar">
-                <li><a href="/">Weather</a></li>
-                <li><a href="/">News</a></li>
-                <li><a href="/">Events</a></li> 
+                <li><a href='#Weather'>Weather</a></li>
+                <li><a href='#News'>News</a></li>
+                <li><a href='#Events'>Events</a></li> 
                 <li><a href="/">Pricing</a></li>
                 <li><a href="/">Contact</a></li>
             </section>
             </section>
-
-
-            <section class="container">
+            <!-- <style>
+                p {
+                  background-image: url('clouds.jpg');
+                }
+                </style>
+            <img src="./assets/images/clouds.jpg"> -->
+            <section id="Weather" class="container">
             <section class = "input">
-                <input type="text" class="inputValue" placeholder="enter Location">
+                <input type="text" class="inputValue" placeholder="Enter Location">
                 <button class="button">Enter</button>
             </section>
-
             </section>
-        <!-- <img src="./images/clouds.jpg"> -->
-        <script src="js/script.js"></script>
+            <section class="displayWeather">
+                <h1 class="temp">----°C</h1>
+                <p class="desc">---</p>
+            </section>
+
+            <section id="News" class="newsSearch">
+                <a class="nav-link" href="#" id="latestNews">Find Latest News</a>
+            </section>
+                <section class="newsArticles">
+                  <p class="article">---</p>
+                </section>
+
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
